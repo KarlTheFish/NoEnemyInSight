@@ -29,10 +29,4 @@ public class EnemyMove : MonoBehaviour
             Destroy(gameObject);
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        //Destroy(gameObject);
-        //NewEnemy();
-    }
 }
