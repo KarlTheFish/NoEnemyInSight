@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyboardAim : MonoBehaviour
 {
-    private float rSpeed = 0.1f; //The aiming rotation speed. 1 is fast as fuck
+    private float rSpeed = 0.3f; //The aiming rotation speed. 1 is fast as fuck
     // Start is called before the first frame update
     void Start()
     {
