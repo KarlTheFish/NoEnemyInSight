@@ -1,0 +1,18 @@
+{
+	"weapon": [
+		{
+			"name": "pistol",
+			"firerate": 1
+		},
+
+		{
+			"name": "shotgun",
+			"firerate": 0.75
+		},
+
+		{
+			"name": "rifle",
+			"firerate": 1.5
+		}
+	]
+}
