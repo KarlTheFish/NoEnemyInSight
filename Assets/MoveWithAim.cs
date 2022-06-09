@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MoveWithAim : MonoBehaviour
+public class FixAim : MonoBehaviour
 {
     private float aimSpeed = 5.0f;
     // Start is called before the first frame update

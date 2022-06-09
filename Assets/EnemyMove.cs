@@ -19,7 +19,6 @@ public class EnemyMove : MonoBehaviour
             }
         }
         Instantiate(gameObject, new Vector3((float)enemyX, 0, (float)enemyY), Quaternion.identity);
-        Debug.Log("Spawned");
     }
 
     // Update is called once per frame
