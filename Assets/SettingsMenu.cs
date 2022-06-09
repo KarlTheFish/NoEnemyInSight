@@ -8,9 +8,7 @@ public class SettingsMenu : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {   
-            GameObject settingss = new GameObject();
             print("space key was pressed");
-            GameObject.SetActive(false);
         }      
     }
 }
