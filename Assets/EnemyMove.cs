@@ -19,14 +19,20 @@ public class EnemyMove : MonoBehaviour
             }
         }
         Instantiate(gameObject, new Vector3((float)enemyX, 0, (float)enemyY), Quaternion.identity);
+        Debug.Log("Spawned");
     }
 
     // Update is called once per frame
     void Update() {
         transform.position = Vector3.MoveTowards(gameObject.transform.position, GameObject.Find("Player").transform.position, Time.deltaTime);
-        if(gameObject.transform.position == GameObject.Find("Player").transform.position){
+        if (transform.position == GameObject.Find("Player").transform.position) {
             NewEnemy();
             Destroy(gameObject);
         }
+    }
+
+    private void OnTriggerEnter(Collider other) {
+        NewEnemy();
+        Destroy(gameObject);
     }
 }
