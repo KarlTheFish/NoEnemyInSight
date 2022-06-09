@@ -9,7 +9,6 @@
       <change beforePath="$PROJECT_DIR$/Assets/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemyMove.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +94,7 @@
       <workItem from="1654718565127" duration="3303000" />
       <workItem from="1654759026221" duration="4238000" />
       <workItem from="1654763493005" duration="7234000" />
+      <workItem from="1654773788437" duration="2444000" />
     </task>
     <servers />
   </component>

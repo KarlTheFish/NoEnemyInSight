@@ -47,9 +47,4 @@ public class Shooting : MonoBehaviour
             transform.position = GameObject.Find("Player").transform.position;
         }
     }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        Debug.Log("Collided");
-    }
 }
