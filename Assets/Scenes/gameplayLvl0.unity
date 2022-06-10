@@ -938,6 +938,8 @@ GameObject:
   - component: {fileID: 1550677152}
   - component: {fileID: 1550677156}
   - component: {fileID: 1550677157}
+  - component: {fileID: 1550677158}
+  - component: {fileID: 1550677159}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -1047,3 +1049,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536dcb2bfbb5ed03d9a733cceedc55aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1550677158
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550677150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38fc9da21294ffc48bc471f11f0292be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShootSpeed: 0
+--- !u!114 &1550677159
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1550677150}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e741851cba3ad425c91ecf922cc6b379, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"declarations":{"Kind":"Object","collection":{"$content":[{"name":"ShootSpeed","value":{"$content":0.0,"$type":"System.Single"},"typeHandle":{"Identification":"System.Single,
+      mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"}}'
+    _objectReferences: []
