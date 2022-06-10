@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyMove : MonoBehaviour
 {
+    public PlayerStats playerStats;
     //generates coordinates for a new enemy and creates an enemy
     void NewEnemy(){
         double enemyX = Random.Range(-10, 10);
@@ -30,6 +31,7 @@ public class EnemyMove : MonoBehaviour
         if (transform.position == GameObject.Find("Player").transform.position) {
             NewEnemy();
             Destroy(gameObject);
+            playerStats.playerHealth--;
         }
     }
 
@@ -37,5 +39,6 @@ public class EnemyMove : MonoBehaviour
     private void OnTriggerEnter(Collider other) {
         NewEnemy();
         Destroy(gameObject);
+        playerStats.score++;
     }
 }
