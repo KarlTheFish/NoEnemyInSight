@@ -28,6 +28,9 @@ public class EnemyMove : MonoBehaviour
         transform.position = Vector3.MoveTowards(gameObject.transform.position, GameObject.Find("Player").transform.position, Time.deltaTime);
         //if the enemy hits the player
         if (transform.position == GameObject.Find("Player").transform.position) {
+            //playerHit = true;
+            Debug.Log("Got hit");
+            GameObject.Find("Player").GetComponent<AudioSource>().Play(0);
             NewEnemy();
             Destroy(gameObject);
         }
@@ -35,6 +38,7 @@ public class EnemyMove : MonoBehaviour
 
     //if the enemy is shot
     private void OnTriggerEnter(Collider other) {
+        Debug.Log("Test");
         NewEnemy();
         Destroy(gameObject);
     }
