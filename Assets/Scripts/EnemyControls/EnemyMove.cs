@@ -7,6 +7,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyMove : MonoBehaviour
 {
+    public PlayerStats playerStats;
     //generates coordinates for a new enemy and creates an enemy
     void NewEnemy(){
         double enemyX = Random.Range(-10, 10);
@@ -33,6 +34,7 @@ public class EnemyMove : MonoBehaviour
             GameObject.Find("Player").GetComponent<AudioSource>().Play(0);
             NewEnemy();
             Destroy(gameObject);
+            playerStats.playerHealth--;
         }
     }
 
@@ -41,5 +43,6 @@ public class EnemyMove : MonoBehaviour
         Debug.Log("Test");
         NewEnemy();
         Destroy(gameObject);
+        playerStats.score++;
     }
 }
