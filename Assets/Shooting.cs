@@ -41,6 +41,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        _aimThing.transform.position = _aimThing.transform.position + Vector3.zero;
         transform.position = Vector3.MoveTowards(gameObject.transform.position, _aimThing.transform.position, Time.deltaTime * shootSpeed);
         if (gameObject.transform.position == _aimThing.transform.position) {
             ShootButtonPressed = false;
