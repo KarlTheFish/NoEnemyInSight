@@ -30,11 +30,18 @@ public class EnemyMove : MonoBehaviour
         //if the enemy hits the player
         if (transform.position == GameObject.Find("Player").transform.position) {
             //playerHit = true;
-            Debug.Log("Got hit");
-            GameObject.Find("Player").GetComponent<AudioSource>().Play(0);
             NewEnemy();
             Destroy(gameObject);
-            playerStats.playerHealth--;
+            if (playerStats.secretHealth > 0)
+            {
+                playerStats.secretHealth--;
+            }
+            else
+            {
+                Debug.Log("Got hit");
+                GameObject.Find("Player").GetComponent<AudioSource>().Play(0);
+                playerStats.playerHealth--;
+            }
         }
     }
 
