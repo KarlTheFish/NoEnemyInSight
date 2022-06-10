@@ -46,6 +46,7 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
+        gameObject.GetComponent<SphereCollider>().isTrigger = true;
         shot.GetComponent<MoveWithAim>().enabled = false;
         gameObject.GetComponent<MoveWithAim>().enabled = false;
         transform.position = Vector3.MoveTowards(gameObject.transform.position, shot.transform.position, Time.deltaTime * shootSpeed);
@@ -54,6 +55,7 @@ public class Shooting : MonoBehaviour
             transform.position = GameObject.Find("Player").transform.position;
             Destroy(shot);
             gameObject.GetComponent<MoveWithAim>().enabled = true;
+            gameObject.GetComponent<SphereCollider>().isTrigger = false;
         }
     }
 }
