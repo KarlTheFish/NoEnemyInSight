@@ -12,6 +12,7 @@ public class Shooting : MonoBehaviour
     private GameObject _aimThing;
     private GameObject _shootPoint;
     private bool ShootButtonPressed;
+    private GameObject shot;
     
 
 
@@ -30,8 +31,10 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && shot == null)
         {
+            shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
+            shot.tag = "Shot";
             ShootButtonPressed = true;
         }
 
@@ -43,14 +46,13 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
-        _aimThing.GetComponent<MoveWithAim>().enabled = false;
+        shot.GetComponent<MoveWithAim>().enabled = false;
         gameObject.GetComponent<MoveWithAim>().enabled = false;
-        transform.position = Vector3.MoveTowards(gameObject.transform.position, _aimThing.transform.position, Time.deltaTime * shootSpeed);
-        if (gameObject.transform.position == _aimThing.transform.position) {
+        transform.position = Vector3.MoveTowards(gameObject.transform.position, shot.transform.position, Time.deltaTime * shootSpeed);
+        if (gameObject.transform.position == shot.transform.position) {
             ShootButtonPressed = false;
             transform.position = GameObject.Find("Player").transform.position;
-            _aimThing.GetComponent<MoveWithAim>().enabled = true;
+            Destroy(shot);
             gameObject.GetComponent<MoveWithAim>().enabled = true;
         }
     }
