@@ -6,11 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="6857e604-4743-411a-843f-1f609879d08d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EnemyMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FixAim.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/FixAim.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MoveWithAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MoveWithAim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +97,7 @@
       <workItem from="1654773788437" duration="3937000" />
       <workItem from="1654778060617" duration="984000" />
       <workItem from="1654805204571" duration="665000" />
-      <workItem from="1654844519450" duration="2665000" />
+      <workItem from="1654844519450" duration="4060000" />
     </task>
     <servers />
   </component>
