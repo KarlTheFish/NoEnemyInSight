@@ -14,17 +14,21 @@ public class MoveWithAim : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-        //for mouse aiming
-        float aiming = aimSpeed * Input.GetAxis("Mouse X");
-        transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, aiming);
-        
-        //for keyboard aiming
-        if (Input.GetKey("left")){
-            transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, -(rSpeed));
-        }
-        if (Input.GetKey("right")){
-            transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, rSpeed);
+    {   
+        if (ControlsMenu.controls == "keys") // an object reference is required for 'ControlsMenu.controls'
+        {
+            //for mouse aiming
+            float aiming = aimSpeed * Input.GetAxis("Mouse X");
+            transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, aiming);
+        } else 
+        {
+            //for keyboard aiming
+            if (Input.GetKey("left")){
+                transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, -(rSpeed));
+            }
+            if (Input.GetKey("right")){
+                transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, rSpeed);
+            }
         }
     }
 }
