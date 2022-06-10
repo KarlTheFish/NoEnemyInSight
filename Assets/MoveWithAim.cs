@@ -2,9 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FixAim : MonoBehaviour
+public class MoveWithAim : MonoBehaviour
 {
-    private float aimSpeed = 5.0f;
+    private float aimSpeed = 5.0f; //hiire oma
+    float rSpeed = 0.3f; //klaviatuuri oma
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +20,6 @@ public class FixAim : MonoBehaviour
         transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, aiming);
         
         //for keyboard aiming
-        float rSpeed = 0.3f;
         if (Input.GetKey("left")){
             transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, -(rSpeed));
         }
