@@ -4,20 +4,18 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public Save save;
+    public Levels levels;
+
     public int score;
     public int playerHealth;
     public int secretHealth;
 
-    // Start is called before the first frame update
-    void Start()
+    public void saveStuff()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        //Debug.Log(playerHealth);
-        //Debug.Log(score);
+        if (playerHealth == 0 || levels.level1 == 0)
+        {
+            save.SaveData(score);
+        }
     }
 }
