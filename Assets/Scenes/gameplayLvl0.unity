@@ -253,6 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1328b005af86f2f489bb7c8d8b3a0b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerStats: {fileID: 0}
 --- !u!136 &629873255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -653,6 +654,7 @@ GameObject:
   - component: {fileID: 1144362408}
   - component: {fileID: 1144362409}
   - component: {fileID: 1144362410}
+  - component: {fileID: 1144362411}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -669,7 +671,7 @@ CapsuleCollider:
   m_GameObject: {fileID: 1144362401}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   m_Radius: 0.5000001
   m_Height: 2
   m_Direction: 1
@@ -910,6 +912,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1144362411
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144362401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d74c478fd2f08c644b58606bdd2a3c65, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1550677150
 GameObject:
   m_ObjectHideFlags: 0
@@ -954,7 +968,7 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1550677150}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.5
