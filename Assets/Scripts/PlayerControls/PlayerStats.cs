@@ -6,6 +6,7 @@ public class PlayerStats : MonoBehaviour
 {
     public int score;
     public int playerHealth;
+    public int secretHealth;
 
     // Start is called before the first frame update
     void Start()
@@ -16,7 +17,7 @@ public class PlayerStats : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(playerHealth);
+        //Debug.Log(playerHealth);
         //Debug.Log(score);
     }
 }
