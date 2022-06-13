@@ -8,6 +8,14 @@ public class ControlsMenu : MonoBehaviour
     public Button keys;
     public Button mouse;
     public string controls;
+    public Slider mouseSlider;
+    public Slider keysSlider;
+
+    void Start()
+    {
+        changeKeysSens();
+        changeMouseSens();
+    }
 
     public void CheckControls()
     {
@@ -22,5 +30,17 @@ public class ControlsMenu : MonoBehaviour
             controls = "mouse";
         }
     }
- 
+
+    public void changeMouseSens()
+    {
+        Debug.Log(mouseSlider.value);
+        SensitivityController.mouseSensitivity = mouseSlider.value;
+        Debug.Log("value:" + SensitivityController.mouseSensitivity);
+    }
+
+    public void changeKeysSens()
+    {
+        Debug.Log(keysSlider.value);
+        SensitivityController.keysSensitivity = keysSlider.value;
+    }
 }
