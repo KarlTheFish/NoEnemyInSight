@@ -11,7 +11,7 @@ public class MoveWithAim : MonoBehaviour
 
     void Start()
     {
-        Debug.Log(SensitivityController.mouseSensitivity);
+        // Debug.Log(SensitivityController.mouseSensitivity);
         if (SensitivityController.mouseSensitivity != 0 && SensitivityController.keysSensitivity != 0)
         {
         aimSpeed = SensitivityController.mouseSensitivity;
