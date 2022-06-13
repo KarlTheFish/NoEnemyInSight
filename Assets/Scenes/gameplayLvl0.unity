@@ -253,7 +253,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1328b005af86f2f489bb7c8d8b3a0b75, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerStats: {fileID: 0}
+  playerStats: {fileID: 1144362412}
 --- !u!136 &629873255
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -637,6 +637,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536dcb2bfbb5ed03d9a733cceedc55aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlsMenu: {fileID: 0}
+  aimSpeed: 5
+  rSpeed: 0.3
 --- !u!1 &1144362401
 GameObject:
   m_ObjectHideFlags: 0
@@ -655,6 +658,7 @@ GameObject:
   - component: {fileID: 1144362409}
   - component: {fileID: 1144362410}
   - component: {fileID: 1144362411}
+  - component: {fileID: 1144362412}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -924,6 +928,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d74c478fd2f08c644b58606bdd2a3c65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1144362412
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144362401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d699b7547fa1c048b86b36fd5f09d0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  playerHealth: 0
+  secretHealth: 0
 --- !u!1 &1550677150
 GameObject:
   m_ObjectHideFlags: 0
@@ -1047,3 +1066,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 536dcb2bfbb5ed03d9a733cceedc55aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  controlsMenu: {fileID: 0}
+  aimSpeed: 5
+  rSpeed: 0.3
