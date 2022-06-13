@@ -658,6 +658,7 @@ GameObject:
   - component: {fileID: 1144362411}
   - component: {fileID: 1144362413}
   - component: {fileID: 1144362412}
+  - component: {fileID: 1144362414}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -953,9 +954,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d699b7547fa1c048b86b36fd5f09d0f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  save: {fileID: 1144362414}
+  levels: {fileID: 1144362412}
   score: 0
   playerHealth: 2
   secretHealth: 1
+--- !u!114 &1144362414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1144362401}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd642838ab977504db28283fa6de7d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1550677150
 GameObject:
   m_ObjectHideFlags: 0
