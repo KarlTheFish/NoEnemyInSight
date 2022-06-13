@@ -8,7 +8,10 @@ public class KeyboardAim : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (SensitivityController.keysSensitivity != 0)
+        {
+            rSpeed = SensitivityController.keysSensitivity;
+        }
     }
 
     // Update is called once per frame
