@@ -47,9 +47,10 @@ public class EnemyMove : MonoBehaviour
 
     //if the enemy is shot
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("Test");
+        GameObject.Find("AimThing").GetComponent<AudioSource>().Play(0);
         NewEnemy();
         Destroy(gameObject); 
+        Debug.Log("Enemy got hit");
         GameObject.Find("Player").GetComponent<PlayerStats>().score++;
     }
 }
