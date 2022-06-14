@@ -4,21 +4,28 @@ using UnityEngine;
 
 public class MoveWithAim : MonoBehaviour
 {
-    private float aimSpeed = 5.0f; //hiire oma
-    float rSpeed = 0.3f; //klaviatuuri oma
-    // Start is called before the first frame update
+    public ControlsMenu controlsMenu;
+
+    public float aimSpeed = 5.0f; //hiire oma // 5.0f default
+    public float rSpeed = 0.3f; //klaviatuuri oma     // 0.3f default
+
     void Start()
     {
+        // Debug.Log(SensitivityController.mouseSensitivity);
+        if (SensitivityController.mouseSensitivity != 0 && SensitivityController.keysSensitivity != 0)
+        {
+        aimSpeed = SensitivityController.mouseSensitivity;
+        rSpeed = SensitivityController.keysSensitivity;
+        }
         
     }
 
-    // Update is called once per frame
     void Update()
-    {
+    {   
         //for mouse aiming
         float aiming = aimSpeed * Input.GetAxis("Mouse X");
         transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, aiming);
-        
+    
         //for keyboard aiming
         if (Input.GetKey("left")){
             transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, -(rSpeed));

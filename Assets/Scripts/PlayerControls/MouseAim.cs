@@ -8,7 +8,10 @@ public class MouseAim : MonoBehaviour
     float aimSpeed = 5f;
     void Start()
     {
-        
+        if (SensitivityController.mouseSensitivity != 0)
+        {
+            aimSpeed = SensitivityController.mouseSensitivity;
+        }
     }
 
     // Update is called once per frame

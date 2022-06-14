@@ -41,9 +41,9 @@ public class EnemyMove : MonoBehaviour
             //playerHit = true;
             NewEnemy();
             Destroy(gameObject);
-            if (playerStats.secretHealth > 0)
+            if (GameObject.Find("Player").GetComponent<PlayerStats>().secretHealth > 0)
             {
-                playerStats.secretHealth--;
+                GameObject.Find("Player").GetComponent<PlayerStats>().secretHealth--;
             }
             else
             {
@@ -58,6 +58,7 @@ public class EnemyMove : MonoBehaviour
     //if the enemy is shot
     private void OnTriggerEnter(Collider other) {
         Debug.Log("Enemy hit");
+        GameObject.Find("AimThing").GetComponent<AudioSource>().Play(0);
         NewEnemy();
         Destroy(gameObject);
         playerStats.score++;
