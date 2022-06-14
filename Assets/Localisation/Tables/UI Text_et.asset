@@ -1,0 +1,83 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9620f8c34305754d8cc9a7e49e852d9, type: 3}
+  m_Name: UI Text_et
+  m_EditorClassIdentifier: 
+  m_LocaleId:
+    m_Code: et
+  m_SharedData: {fileID: 11400000, guid: 26655468d3189394e9a60404e456b5cc, type: 2}
+  m_Metadata:
+    m_Items: []
+  m_TableData:
+  - m_Id: 121030172672
+    m_Localized: "M\xE4ngi"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 689509359616
+    m_Localized: "M\xC4NGI"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1879550844928
+    m_Localized: "S\xC4TTED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2142747615232
+    m_Localized: KREDIIDID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2379373469696
+    m_Localized: LAHKU
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2970287988736
+    m_Localized: "S\xC4TTED"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3285473157120
+    m_Localized: HELID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3485025558528
+    m_Localized: KONTROLLER
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7127354957824
+    m_Localized: HELID
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3671449788416
+    m_Localized: TAGASI
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7738137894912
+    m_Localized: Master Helid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 7939409960960
+    m_Localized: "M\xE4ngija Helid"
+    m_Metadata:
+      m_Items: []
+  - m_Id: 8195598049280
+    m_Localized: Vastase Helid
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9438919778304
+    m_Localized: Hiire Tundlikkus
+    m_Metadata:
+      m_Items: []
+  - m_Id: 9664141320192
+    m_Localized: Noolte Tundlikkus
+    m_Metadata:
+      m_Items: []
+  references:
+    version: 2
+    RefIds: []
