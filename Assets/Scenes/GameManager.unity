@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.4465785, g: 0.49641252, b: 0.574817, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -148,7 +148,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 62928218}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &62928220
 Camera:
   m_ObjectHideFlags: 0
@@ -452,7 +452,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d40c8fa3031e43b44a57d782ada53a5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponMenuUI: {fileID: 0}
+  weaponMenuUI: {fileID: 243227401}
 --- !u!1 &263067929
 GameObject:
   m_ObjectHideFlags: 0
