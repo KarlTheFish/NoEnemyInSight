@@ -17,4 +17,9 @@ public class AudioSettingsMenu : MonoBehaviour
         audioMixer.SetFloat("EnemyVolume", volume);
     }
 
+    public void SetPlayerVolume(float volume) 
+    {
+        audioMixer.SetFloat("PlayerVolume", volume);
+    }
+
 }
