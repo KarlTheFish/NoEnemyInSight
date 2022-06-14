@@ -7,7 +7,7 @@ public static class SaveSystem
     public static void SaveStats (PlayerStats playerStats)
     {
         BinaryFormatter formatter = new BinaryFormatter();
-        string path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+        string path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.txt";
         FileStream stream = new FileStream(path, FileMode.Create);
 
         PlayerStatsJSON data = new PlayerStatsJSON(playerStats);
@@ -18,7 +18,7 @@ public static class SaveSystem
 
     public static PlayerStatsJSON LoadStats()
     {
-        string path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+        string path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.txt";
         if (File.Exists(path))
         {
             BinaryFormatter formatter = new BinaryFormatter();
