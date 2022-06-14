@@ -30,7 +30,7 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && shot == null)
         {
-            //gameObject.GetComponent<AudioSource>().Play(0);
+            gameObject.GetComponent<AudioSource>().Play(0);
             shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
             shot.tag = "Shot";
             ShootButtonPressed = true;
