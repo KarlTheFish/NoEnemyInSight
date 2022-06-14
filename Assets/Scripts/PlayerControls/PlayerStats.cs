@@ -4,18 +4,34 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
-    public Save save;
-    public Levels levels;
-
     public int score;
     public int playerHealth;
     public int secretHealth;
 
-    public void saveStuff()
+    public void SaveStats()
     {
-        if (playerHealth == 0 || levels.level1 == 0)
+        SaveSystem.SaveStats(this);
+    }
+
+    public void LoadStats()
+    {
+        PlayerStatsJSON data = SaveSystem.LoadStats();
+
+        score = data.score;
+        playerHealth = data.playerHealth;
+    }
+
+    void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.S))
         {
-            save.SaveData(score);
+            SaveStats();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadStats();
         }
     }
+
 }

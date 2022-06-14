@@ -7,13 +7,12 @@ using UnityEngine.Events;
 
 public class Shooting : MonoBehaviour
 {
-    private float shootSpeed = 5f;
+    public float shootSpeed;
     
     private GameObject _aimThing;
     private GameObject _shootPoint;
     private bool ShootButtonPressed;
     private GameObject shot;
-    
 
 
     // Start is called before the first frame update
@@ -25,7 +24,7 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame

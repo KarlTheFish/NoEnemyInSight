@@ -11,7 +11,7 @@ public class EnemyMove : MonoBehaviour
     public Levels levels;
     //generates coordinates for a new enemy and creates an enemy
     void NewEnemy(){
-        if (levels.level1 > 1 && playerStats.playerHealth > 1) //dont know why || doesnt work and %% does; cant be less than 1?
+        if (levels.level1 > 1 && playerStats.playerHealth > 1) //dont know why || doesnt work and && does; cant be less than 1?
         {
             double enemyX = Random.Range(-10, 10);
             double enemyY = Random.Range(-10, 10);
