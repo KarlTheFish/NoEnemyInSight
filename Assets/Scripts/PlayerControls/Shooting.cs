@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 public class Shooting : MonoBehaviour
 {
-    private float shootSpeed = 5f;
+    private float shootSpeed = 10f;
     
     private GameObject _aimThing;
     private GameObject _shootPoint;
@@ -25,7 +25,6 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
-
     }
 
     // Update is called once per frame
@@ -33,6 +32,7 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && shot == null)
         {
+            gameObject.GetComponent<AudioSource>().Play(0);
             shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
             shot.tag = "Shot";
             ShootButtonPressed = true;

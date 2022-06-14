@@ -7,7 +7,7 @@ using Random = UnityEngine.Random;
 
 public class EnemyMove : MonoBehaviour
 {
-    public PlayerStats playerStats;
+
     //generates coordinates for a new enemy and creates an enemy
     void NewEnemy(){
         double enemyX = Random.Range(-10, 10);
@@ -32,24 +32,25 @@ public class EnemyMove : MonoBehaviour
             //playerHit = true;
             NewEnemy();
             Destroy(gameObject);
-            if (playerStats.secretHealth > 0)
+            if (GameObject.Find("Player").GetComponent<PlayerStats>().secretHealth > 0)
             {
-                playerStats.secretHealth--;
+                GameObject.Find("Player").GetComponent<PlayerStats>().secretHealth--;
             }
             else
             {
                 Debug.Log("Got hit");
                 GameObject.Find("Player").GetComponent<AudioSource>().Play(0);
-                playerStats.playerHealth--;
+                GameObject.Find("Player").GetComponent<PlayerStats>().playerHealth--;
             }
         }
     }
 
     //if the enemy is shot
     private void OnTriggerEnter(Collider other) {
-        Debug.Log("Test");
+        GameObject.Find("AimThing").GetComponent<AudioSource>().Play(0);
         NewEnemy();
-        Destroy(gameObject);
-        playerStats.score++;
+        Destroy(gameObject); 
+        Debug.Log("Enemy got hit");
+        GameObject.Find("Player").GetComponent<PlayerStats>().score++;
     }
 }
