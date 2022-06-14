@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class WeaponParameters : MonoBehaviour
 {
-    public float ShootSpeed = 1.0f;
+    public float ShootSpeed;
+    public int BulletAmount;
     
     // Start is called before the first frame update
     void Start()

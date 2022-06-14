@@ -7,7 +7,7 @@ using UnityEngine.Events;
 
 public class Shooting : MonoBehaviour
 {
-    private float shootSpeed = 10f;
+    private float shootSpeed;
     
     private GameObject _aimThing;
     private bool ShootButtonPressed;
@@ -19,6 +19,7 @@ public class Shooting : MonoBehaviour
     private void Awake()
     {
         _aimThing = GameObject.Find("AimThing");
+        shootSpeed = GameObject.Find("Gun").GetComponent<WeaponParameters>().ShootSpeed;
     }
 
     void Start()
@@ -30,15 +31,22 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && shot == null)
         {
-            gameObject.GetComponent<AudioSource>().Play(0);
-            shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
-            shot.tag = "Shot";
+            for (int i = 0; i < GetComponent<WeaponParameters>().BulletAmount; i++) {
+                gameObject.GetComponent<AudioSource>().Play(0);
+                shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
+                shot.tag = "Shot";
+                _aimThing.transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, 5.0f);
+            }
             ShootButtonPressed = true;
+            Debug.Log("shot fired");
         }
 
         if (ShootButtonPressed == true)
         {
-            Shoot();
+            for (int i = 0; i < GetComponent<WeaponParameters>().BulletAmount; i++)
+            {
+                Shoot();
+            }
         }
     }
 

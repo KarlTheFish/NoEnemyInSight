@@ -7,7 +7,8 @@ public class MainMenu : MonoBehaviour
 {
     public void PlayGame() {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("WeaponMenu");
+        //SceneManager.LoadScene("WeaponMenu"); THIS WILL BE ADDED BACK ONCE IT IS NOT FUCKING BROKEN ANYMORE
+        SceneManager.LoadScene("gameplayLvl0");
     }
 
     public void QuitGame() {
