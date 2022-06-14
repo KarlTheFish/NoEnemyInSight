@@ -10,7 +10,6 @@ public class Shooting : MonoBehaviour
     private float shootSpeed = 10f;
     
     private GameObject _aimThing;
-    private GameObject _shootPoint;
     private bool ShootButtonPressed;
     private GameObject shot;
     
@@ -20,7 +19,6 @@ public class Shooting : MonoBehaviour
     private void Awake()
     {
         _aimThing = GameObject.Find("AimThing");
-        _shootPoint = GameObject.FindWithTag("Shot");
     }
 
     void Start()
