@@ -31,9 +31,10 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && shot == null)
         {
-            for (int i = 0; i < GetComponent<WeaponParameters>().BulletAmount; i++)
+            for (int i = 1; i < GetComponent<WeaponParameters>().BulletAmount; i++)
             {
                 gameObject.transform.localScale += Vector3.one;
+                Debug.Log("Bullet enlarged");
             }
             gameObject.GetComponent<AudioSource>().Play(0);
             shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);

@@ -7,6 +7,13 @@
     <list default="true" id="6857e604-4743-411a-843f-1f609879d08d" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyControls/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyControls/EnemyMove.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/MoveWithAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/MoveWithAim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Shooting.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.assets" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +108,7 @@
       <workItem from="1655124599927" duration="3086000" />
       <workItem from="1655148744870" duration="1429000" />
       <workItem from="1655239722145" duration="2204000" />
-      <workItem from="1655293203514" duration="903000" />
+      <workItem from="1655293203514" duration="1888000" />
     </task>
     <servers />
   </component>

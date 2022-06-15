@@ -15,10 +15,8 @@ public class EnemyMove : MonoBehaviour
         while ((enemyX > -5 && enemyX < 5) || (enemyY > -5 && enemyY < 5)) {
             enemyX = Random.Range(-10, 10);
             enemyY = Random.Range(-10, 10);
-            Debug.Log("Spawned too close");
             if ((enemyX > 5 || enemyX < -5) && (enemyY > 5 || enemyY < -5))
             {
-                Debug.Log("Fix applied");
                 break;
             }
         }
