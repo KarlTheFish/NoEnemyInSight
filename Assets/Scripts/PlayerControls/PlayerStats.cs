@@ -8,17 +8,30 @@ public class PlayerStats : MonoBehaviour
     public int playerHealth;
     public int secretHealth;
 
-    // Start is called before the first frame update
-    void Start()
+    public void SaveStats()
     {
-        playerHealth = 3;
-        score = 0;
-        secretHealth = 1;
-
+        SaveSystem.SaveStats(this);
     }
 
-    // Update is called once per frame
+    public void LoadStats()
+    {
+        PlayerStatsJSON data = SaveSystem.LoadStats();
+
+        score = data.score;
+        playerHealth = data.playerHealth;
+    }
+
     void Update()
     {
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaveStats();
+        }
+
+        if (Input.GetKeyDown(KeyCode.L))
+        {
+            LoadStats();
+        }
     }
+
 }
