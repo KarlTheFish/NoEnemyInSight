@@ -1416,7 +1416,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ShootSpeed: 5
-  BulletAmount: 3
+  BulletAmount: 2
 --- !u!4 &1584838827
 Transform:
   m_ObjectHideFlags: 0
