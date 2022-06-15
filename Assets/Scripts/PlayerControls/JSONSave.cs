@@ -22,8 +22,8 @@ public class JSONSave : MonoBehaviour
 
     private void SetPaths()
     {
-        path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
-        persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "SaveData.json";
+        path = Application.dataPath + Path.AltDirectorySeparatorChar + "SaveData.txt";
+        persistentPath = Application.persistentDataPath + Path.AltDirectorySeparatorChar + "SaveData.txt";
     }
 
     // Update is called once per frame
