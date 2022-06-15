@@ -41,9 +41,9 @@ public class EnemyMove : MonoBehaviour
             //playerHit = true;
             NewEnemy();
             Destroy(gameObject);
-            if (GameObject.Find("Player").GetComponent<PlayerStats>().secretHealth > 0)
+            if (playerStats.secretHealth > 0)
             {
-                GameObject.Find("Player").GetComponent<PlayerStats>().secretHealth--;
+                playerStats.secretHealth--;
             }
             else
             {
