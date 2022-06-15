@@ -34,4 +34,8 @@ public class PlayerStats : MonoBehaviour
         }
     }
 
+    public void AddScore()
+    {
+        ScoreController.newscore = score;
+    }
 }

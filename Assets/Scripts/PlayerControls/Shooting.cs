@@ -14,7 +14,6 @@ public class Shooting : MonoBehaviour
     private bool ShootButtonPressed;
     private GameObject shot;
 
-
     // Start is called before the first frame update
     private void Awake()
     {
