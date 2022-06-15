@@ -78,6 +78,18 @@ MonoBehaviour:
     m_Localized: Noolte Tundlikkus
     m_Metadata:
       m_Items: []
+  - m_Id: 330935458717696
+    m_Localized: KEEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331362317230080
+    m_Localized: INGLISE KEEL
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331638407290880
+    m_Localized: EESTI KEEL
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

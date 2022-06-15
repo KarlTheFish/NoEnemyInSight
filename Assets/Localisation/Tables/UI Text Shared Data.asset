@@ -79,6 +79,22 @@ MonoBehaviour:
     m_Key: 
     m_Metadata:
       m_Items: []
+  - m_Id: 330935458717696
+    m_Key: LanguageButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331174345302016
+    m_Key: L
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331362317230080
+    m_Key: EnglishButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331638407290880
+    m_Key: EstonianButton text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

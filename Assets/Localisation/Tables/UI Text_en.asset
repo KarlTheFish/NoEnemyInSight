@@ -78,6 +78,18 @@ MonoBehaviour:
     m_Localized: Keys Sensitivity
     m_Metadata:
       m_Items: []
+  - m_Id: 330935458717696
+    m_Localized: LANGUAGE
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331362317230080
+    m_Localized: ENGLISH
+    m_Metadata:
+      m_Items: []
+  - m_Id: 331638407290880
+    m_Localized: ESTONIAN
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []
