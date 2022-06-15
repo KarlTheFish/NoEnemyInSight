@@ -5,23 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6857e604-4743-411a-843f-1f609879d08d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets0.resource" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/WeaponParameters.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/WeaponParameters.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level0" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level0" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level2" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.resource" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.resource" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets0.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets0.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets1.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets1.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets2.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/sharedassets2.assets" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,7 +101,8 @@
       <workItem from="1654853116019" duration="1724000" />
       <workItem from="1655124599927" duration="3086000" />
       <workItem from="1655148744870" duration="1429000" />
-      <workItem from="1655239722145" duration="2118000" />
+      <workItem from="1655239722145" duration="2204000" />
+      <workItem from="1655293203514" duration="487000" />
     </task>
     <servers />
   </component>

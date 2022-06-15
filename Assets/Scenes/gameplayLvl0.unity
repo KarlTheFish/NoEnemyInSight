@@ -1415,7 +1415,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38fc9da21294ffc48bc471f11f0292be, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ShootSpeed: 0
+  ShootSpeed: 5
+  BulletAmount: 3
 --- !u!4 &1584838827
 Transform:
   m_ObjectHideFlags: 0

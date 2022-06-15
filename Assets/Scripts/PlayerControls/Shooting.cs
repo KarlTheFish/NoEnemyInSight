@@ -31,12 +31,14 @@ public class Shooting : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) && shot == null)
         {
-            for (int i = 0; i < GetComponent<WeaponParameters>().BulletAmount; i++) {
-                gameObject.GetComponent<AudioSource>().Play(0);
-                shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
-                shot.tag = "Shot";
-                _aimThing.transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, 5.0f);
+            for (int i = 0; i < GetComponent<WeaponParameters>().BulletAmount; i++)
+            {
+                gameObject.transform.localScale += Vector3.one;
             }
+            gameObject.GetComponent<AudioSource>().Play(0);
+            shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
+            shot.tag = "Shot";
+            _aimThing.transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, 5.0f);
             ShootButtonPressed = true;
             Debug.Log("shot fired");
         }
@@ -62,6 +64,7 @@ public class Shooting : MonoBehaviour
             Destroy(shot);
             gameObject.GetComponent<MoveWithAim>().enabled = true;
             gameObject.GetComponent<SphereCollider>().isTrigger = false;
+            gameObject.transform.localScale = Vector3.one;
         }
     }
 }
