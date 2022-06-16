@@ -17,11 +17,16 @@ public class KeyboardAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKey("left")){
-            transform.Rotate(0f, -(rSpeed), 0f);
-        }
-        if (Input.GetKey("right")){
-            transform.Rotate(0f, rSpeed, 0f);
+        if (!PauseGame.gameIsPaused)
+        {
+            if (Input.GetKey("left"))
+            {
+                transform.Rotate(0f, -(rSpeed), 0f);
+            }
+            if (Input.GetKey("right"))
+            {
+                transform.Rotate(0f, rSpeed, 0f);
+            }
         }
     }
 }

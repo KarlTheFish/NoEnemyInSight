@@ -21,17 +21,22 @@ public class MoveWithAim : MonoBehaviour
     }
 
     void Update()
-    {   
-        //for mouse aiming
-        float aiming = aimSpeed * Input.GetAxis("Mouse X");
-        transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, aiming);
-    
-        //for keyboard aiming
-        if (Input.GetKey("left")){
-            transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, -(rSpeed));
-        }
-        if (Input.GetKey("right")){
-            transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, rSpeed);
+    {
+        if (!PauseGame.gameIsPaused)
+        {
+            //for mouse aiming
+            float aiming = aimSpeed * Input.GetAxis("Mouse X");
+            transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, aiming);
+
+            //for keyboard aiming
+            if (Input.GetKey("left"))
+            {
+                transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, -(rSpeed));
+            }
+            if (Input.GetKey("right"))
+            {
+                transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, rSpeed);
+            }
         }
     }
 }

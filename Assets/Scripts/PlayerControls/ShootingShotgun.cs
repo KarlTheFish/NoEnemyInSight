@@ -1,14 +1,11 @@
-using System;
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class Shooting : MonoBehaviour
+public class ShootingShotgun : MonoBehaviour
 {
     public float shootSpeed;
-    
+
     private GameObject _aimThing;
     private GameObject _shootPoint;
     private bool ShootButtonPressed;
@@ -23,7 +20,7 @@ public class Shooting : MonoBehaviour
 
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -48,16 +45,17 @@ public class Shooting : MonoBehaviour
 
     void Shoot()
     {
-        gameObject.GetComponent<SphereCollider>().isTrigger = true;
+        gameObject.GetComponent<CapsuleCollider>().isTrigger = true;
         shot.GetComponent<MoveWithAim>().enabled = false;
         gameObject.GetComponent<MoveWithAim>().enabled = false;
         transform.position = Vector3.MoveTowards(gameObject.transform.position, shot.transform.position, Time.deltaTime * shootSpeed);
-        if (gameObject.transform.position == shot.transform.position) {
+        if (gameObject.transform.position == shot.transform.position)
+        {
             ShootButtonPressed = false;
             transform.position = GameObject.Find("Player").transform.position;
             Destroy(shot);
             gameObject.GetComponent<MoveWithAim>().enabled = true;
-            gameObject.GetComponent<SphereCollider>().isTrigger = false;
+            gameObject.GetComponent<CapsuleCollider>().isTrigger = false;
         }
     }
 }
