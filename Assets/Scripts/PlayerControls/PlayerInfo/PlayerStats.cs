@@ -38,6 +38,7 @@ public class PlayerStats : MonoBehaviour
         if (levels.level1 == 0 || playerHealth == 0)
         {
             AddScore();
+            SaveStats();
         }
     }
 
