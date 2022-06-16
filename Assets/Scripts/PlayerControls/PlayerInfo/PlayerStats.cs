@@ -4,9 +4,12 @@ using UnityEngine;
 
 public class PlayerStats : MonoBehaviour
 {
+    public Levels levels;
+
     public int score;
     public int playerHealth;
     public int secretHealth;
+    public int levelScore;
 
     public void SaveStats()
     {
@@ -32,10 +35,19 @@ public class PlayerStats : MonoBehaviour
         {
             LoadStats();
         }
+        if (levels.level1 == 0 || playerHealth == 0)
+        {
+            AddScore();
+        }
+    }
+
+    private void Start()
+    {
+        LoadStats();
     }
 
     public void AddScore()
     {
-        ScoreController.newscore = score;
+        ScoreController.levelScore = levelScore;
     }
 }

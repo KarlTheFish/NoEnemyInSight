@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ScoreController : MonoBehaviour
 {
-    public static int newscore;
+    public static int levelScore;
 }

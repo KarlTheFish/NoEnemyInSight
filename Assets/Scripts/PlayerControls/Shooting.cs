@@ -29,17 +29,20 @@ public class Shooting : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && shot == null)
+        if (!PauseGame.gameIsPaused)
         {
-            gameObject.GetComponent<AudioSource>().Play(0);
-            shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
-            shot.tag = "Shot";
-            ShootButtonPressed = true;
-        }
+            if (Input.GetKeyDown(KeyCode.Space) && shot == null)
+            {
+                gameObject.GetComponent<AudioSource>().Play(0);
+                shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
+                shot.tag = "Shot";
+                ShootButtonPressed = true;
+            }
 
-        if (ShootButtonPressed == true)
-        {
-            Shoot();
+            if (ShootButtonPressed == true)
+            {
+                Shoot();
+            }
         }
     }
 

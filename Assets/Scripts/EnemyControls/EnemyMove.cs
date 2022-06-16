@@ -64,6 +64,7 @@ public class EnemyMove : MonoBehaviour
         NewEnemy();
         Destroy(gameObject);
         playerStats.score++;
+        playerStats.levelScore++;
         levels.level1--;
     }
 }

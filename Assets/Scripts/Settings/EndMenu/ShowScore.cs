@@ -8,14 +8,9 @@ public class ShowScore : MonoBehaviour
     public Text scoreText;
     public int showScore = 0;
 
-    private void Start()
-    {
-        showScore = ScoreController.newscore;
-        scoreText.text = "Score: " + showScore.ToString();
-    }
-
     private void Update()
     {
+        showScore = ScoreController.levelScore;
         scoreText.text = "Score: " + showScore.ToString();
     }
 }

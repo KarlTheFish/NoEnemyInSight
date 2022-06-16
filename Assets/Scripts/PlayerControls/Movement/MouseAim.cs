@@ -17,8 +17,11 @@ public class MouseAim : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float aiming = aimSpeed * Input.GetAxis("Mouse X");
-        
-        transform.Rotate(0, aiming, 0);
+        if (!PauseGame.gameIsPaused)
+        {
+            float aiming = aimSpeed * Input.GetAxis("Mouse X");
+
+            transform.Rotate(0, aiming, 0);
+        }
     }
 }
