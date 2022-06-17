@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b11a58205ec3474ca216360e9fa74a8, type: 3}
+  m_Name: UI Text Shared Data
+  m_EditorClassIdentifier: 
+  m_TableCollectionName: UI Text
+  m_TableCollectionNameGuidString: 26655468d3189394e9a60404e456b5cc
+  m_Entries:
+  - m_Id: 83348545536
+    m_Key: PlayButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 289037213696
+    m_Key: SettingsButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 441407889408
+    m_Key: CreditsButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 631590215680
+    m_Key: QuitButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1154359877632
+    m_Key: SettingsMenuTitle text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1371230560256
+    m_Key: SettingsMenuTitle
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1648021069824
+    m_Key: LanguageButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1814383943680
+    m_Key: AudioButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 1973801050112
+    m_Key: ControlsButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2181972746240
+    m_Key: BackButton text
+    m_Metadata:
+      m_Items: []
+  m_Metadata:
+    m_Items: []
+  m_KeyGenerator:
+    rid: 1064001091540090908
+  references:
+    version: 2
+    RefIds:
+    - rid: 1064001091540090908
+      type: {class: DistributedUIDGenerator, ns: UnityEngine.Localization.Tables, asm: Unity.Localization}
+      data:
+        m_CustomEpoch: 1655454892753
