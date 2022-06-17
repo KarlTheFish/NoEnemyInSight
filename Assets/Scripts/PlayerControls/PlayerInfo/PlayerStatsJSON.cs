@@ -6,11 +6,9 @@ using UnityEngine;
 public class PlayerStatsJSON
 {
     public int score;
-    public int playerHealth;
 
     public PlayerStatsJSON(PlayerStats playerStats)
     {
         score = playerStats.score;
-        playerHealth = playerStats.playerHealth;
     }
 }

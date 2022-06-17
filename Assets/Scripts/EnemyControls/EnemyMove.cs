@@ -27,11 +27,6 @@ public class EnemyMove : MonoBehaviour
             }
             Instantiate(gameObject, new Vector3((float)enemyX, 0, (float)enemyY), Quaternion.identity);
         }
-        else
-        {
-            Debug.Log("Game has ended");
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
     }
 
     // Update is called once per frame
