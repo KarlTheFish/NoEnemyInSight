@@ -53,6 +53,8 @@ AudioMixerController:
     name: EnemyVolume
   - guid: d98958bfc3b6693498ade27c999de048
     name: MasterVolume
+  - guid: 649834626b30b4841aade526d02d5b53
+    name: PlayerVolume
   m_AudioMixerGroupViews:
   - guids:
     - 7b14318f8f6179642a2ce1c05b0596f2
