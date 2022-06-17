@@ -1,14 +1,21 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEngine.UI;
+using UnityEngine.Localization.Settings;
 using UnityEngine;
 
 public class SettingsMenu : MonoBehaviour
 {
-    void Update()
+    public void SetSelectedLocale(int index)
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {   
-            print("space key was pressed");
-        }      
+        LocalizationSettings.SelectedLocale = LocalizationSettings.AvailableLocales.Locales[index];
+    }
+    
+    public void SetEnglish(){
+        SetSelectedLocale(0);
+    }
+
+    public void SetEstonian(){
+        SetSelectedLocale(1);
     }
 }
