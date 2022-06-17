@@ -7,8 +7,8 @@ public class PlayerStats : MonoBehaviour
     public Levels levels;
 
     public int score;
-    public int playerHealth;
-    public int secretHealth;
+    public int playerHealth = 3;
+    public int secretHealth = 1;
     public int levelScore;
 
     public void SaveStats()
@@ -21,24 +21,28 @@ public class PlayerStats : MonoBehaviour
         PlayerStatsJSON data = SaveSystem.LoadStats();
 
         score = data.score;
-        playerHealth = data.playerHealth;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.S))
-        {
-            SaveStats();
-        }
-
-        if (Input.GetKeyDown(KeyCode.L))
-        {
-            LoadStats();
-        }
         if (levels.level1 == 0 || playerHealth == 0)
         {
             AddScore();
             SaveStats();
+        }
+        if (levels.level1 == 0)
+        {
+            Levels.levelNumber++;
+            Levels.nextLevel++;
+            Levels.lastScreen++;
+            if (Levels.levelNumber >= 3)
+            {
+                Levels.levelNumber = 3;
+            }
+            if (Levels.nextLevel >= 3)
+            {
+                Levels.nextLevel = 3;
+            }
         }
     }
 
