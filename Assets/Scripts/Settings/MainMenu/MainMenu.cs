@@ -6,7 +6,9 @@ using UnityEngine.SceneManagement;
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame() {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        Time.timeScale = 1f;
+        //SceneManager.LoadScene("WeaponMenu"); THIS WILL BE ADDED BACK ONCE IT IS NOT FUCKING BROKEN ANYMORE
+        SceneManager.LoadScene("gameplayLvl0");
     }
 
     public void QuitGame() {

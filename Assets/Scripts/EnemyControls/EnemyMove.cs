@@ -16,11 +16,10 @@ public class EnemyMove : MonoBehaviour
         {
             double enemyX = Random.Range(-10, 10);
             double enemyY = Random.Range(-10, 10);
-            while ((enemyX > -5 && enemyX < 5) || (enemyY > -5 && enemyY < 5))
-            {
+            while ((enemyX > -5 && enemyX < 5) || (enemyY > -5 && enemyY < 5)) {
                 enemyX = Random.Range(-10, 10);
                 enemyY = Random.Range(-10, 10);
-                if ((enemyX > -5 && enemyX < 5) || (enemyY > -5 && enemyY < 5) == false)
+                if ((enemyX > 5 || enemyX < -5) && (enemyY > 5 || enemyY < -5))
                 {
                     break;
                 }

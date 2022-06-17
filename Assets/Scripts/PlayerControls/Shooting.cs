@@ -7,10 +7,10 @@ using UnityEngine.Events;
 
 public class Shooting : MonoBehaviour
 {
+
     public float shootSpeed;
-    
+
     private GameObject _aimThing;
-    private GameObject _shootPoint;
     private bool ShootButtonPressed;
     private GameObject shot;
 
@@ -18,14 +18,9 @@ public class Shooting : MonoBehaviour
     private void Awake()
     {
         _aimThing = GameObject.Find("AimThing");
-        _shootPoint = GameObject.FindWithTag("Shot");
+        shootSpeed = GameObject.Find("Gun").GetComponent<WeaponParameters>().ShootSpeed;
     }
-
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
     void Update()
     {
@@ -39,8 +34,22 @@ public class Shooting : MonoBehaviour
                 ShootButtonPressed = true;
             }
 
-            if (ShootButtonPressed == true)
-            {
+            if (ShootButtonPressed == true){
+                for (int i = 1; i < GetComponent<WeaponParameters>().BulletAmount; i++) {
+                    gameObject.transform.localScale += Vector3.one;
+                    Debug.Log("Bullet enlarged");
+                }
+                gameObject.GetComponent<AudioSource>().Play(0);
+                shot = Instantiate(_aimThing, _aimThing.transform.position, Quaternion.identity);
+                shot.tag = "Shot";
+                _aimThing.transform.RotateAround(GameObject.Find("Player").transform.position, Vector3.up, 5.0f);
+                ShootButtonPressed = true;
+                Debug.Log("shot fired");
+            }
+        }
+
+        if (ShootButtonPressed == true) {
+            for (int i = 0; i < GetComponent<WeaponParameters>().BulletAmount; i++) {
                 Shoot();
             }
         }
@@ -58,6 +67,7 @@ public class Shooting : MonoBehaviour
             Destroy(shot);
             gameObject.GetComponent<MoveWithAim>().enabled = true;
             gameObject.GetComponent<SphereCollider>().isTrigger = false;
+            gameObject.transform.localScale = Vector3.one;
         }
     }
 }
