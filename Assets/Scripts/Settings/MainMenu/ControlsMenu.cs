@@ -17,6 +17,7 @@ public class ControlsMenu : MonoBehaviour
         changeMouseSens();
     }
 
+    /*
     public void CheckControls()
     {
         if (keys.interactable == false) 
@@ -30,6 +31,7 @@ public class ControlsMenu : MonoBehaviour
             controls = "mouse";
         }
     }
+    */
 
     public void changeMouseSens()
     {
