@@ -55,6 +55,78 @@ MonoBehaviour:
     m_Key: BackButton text
     m_Metadata:
       m_Items: []
+  - m_Id: 2530687180800
+    m_Key: LanguageMenuTitle text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2725487435776
+    m_Key: EnglishButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 2884128595968
+    m_Key: EstonianButton text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3277424287744
+    m_Key: AudioSettingsTitle text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3428419231744
+    m_Key: MasterVolume text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3598133354496
+    m_Key: PlayerVolume text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 3774868742144
+    m_Key: EnemyVolume text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4162384683008
+    m_Key: ControlsMenuTitle text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4307876700160
+    m_Key: MouseSensitivity text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 4536785035264
+    m_Key: KeysSensitivity text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5057721786368
+    m_Key: WeaponMenuTitle text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5287129243648
+    m_Key: Score text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5584555728896
+    m_Key: WeaponCost1 text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 5989188624384
+    m_Key: WeaponCost2 text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6145585831936
+    m_Key: WeaponCost3 text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6327383744512
+    m_Key: Weapon1Button text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6508439265280
+    m_Key: Weapon2Button text
+    m_Metadata:
+      m_Items: []
+  - m_Id: 6970185998336
+    m_Key: Weapon3Button text
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
