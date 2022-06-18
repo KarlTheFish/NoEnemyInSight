@@ -5,26 +5,40 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6857e604-4743-411a-843f-1f609879d08d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/WeaponInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyControls/EnemyMove.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyControls/EnemyMove.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/MoveWithAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/MoveWithAim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseMenu.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PauseMenu.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/WeaponInfo.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/SaveData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SaveData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/MainMenu.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/EnemyControls/Levels.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/EnemyControls/Levels.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PauseGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PauseGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Movement/KeyboardAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Movement/KeyboardAim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Movement/MouseAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Movement/MouseAim.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Movement/MoveWithAim.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Movement/MoveWithAim.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Shooting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/Shooting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/Managed/Assembly-CSharp.dll" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/Managed/Assembly-CSharp.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/globalgamemanagers.assets" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level1" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/level1" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.assets" beforeDir="false" afterPath="$PROJECT_DIR$/NoEnemyInSightTest_Data/resources.assets" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/ShootingShotgun.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/PlayerControls/ShootingShotgun.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/MainMenu/WeaponMenu/ChooseWeapon.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/MainMenu/WeaponMenu/ChooseWeapon.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/MainMenu/WeaponMenu/WeaponStatus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/MainMenu/WeaponMenu/WeaponStatus.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Settings/PauseMenu/PauseMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Settings/PauseMenu/PauseMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Unity.VisualScripting.Generated/VisualScripting.Flow/UnitOptions.db" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProblemsViewState">
-    <option name="selectedTabId" value="Toolset" />
+    <option name="selectedTabId" value="CurrentFile" />
   </component>
   <component name="ProjectId" id="2AHvus1Ful4ggm5jZXX68QiF7Ao" />
   <component name="ProjectLevelVcsManager">
@@ -43,7 +57,9 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="rider.run.widget.enabled.cache" value="false" />
+    <property name="settings.editor.selected.configurable" value="CodeLensConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
@@ -109,6 +125,7 @@
       <workItem from="1655148744870" duration="1429000" />
       <workItem from="1655239722145" duration="2204000" />
       <workItem from="1655293203514" duration="1888000" />
+      <workItem from="1655561831647" duration="7124000" />
     </task>
     <servers />
   </component>
@@ -132,5 +149,9 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

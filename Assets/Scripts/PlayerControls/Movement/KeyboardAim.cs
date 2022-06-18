@@ -5,6 +5,8 @@ using UnityEngine;
 public class KeyboardAim : MonoBehaviour
 {
     private float rSpeed = 0.3f; //The aiming rotation speed. 1 is fast as fuck
+
+    private bool _gameIsPaused;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +16,15 @@ public class KeyboardAim : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        _gameIsPaused = GameObject.Find("Level").GetComponent<PauseGame>().gameIsPaused;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (!PauseGame.gameIsPaused)
+        if (!_gameIsPaused)
         {
             if (Input.GetKey("left"))
             {

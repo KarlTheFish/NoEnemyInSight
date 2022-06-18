@@ -9,6 +9,8 @@ public class MoveWithAim : MonoBehaviour
     public float aimSpeed = 5.0f; //hiire oma // 5.0f default
     public float rSpeed = 0.3f; //klaviatuuri oma     // 0.3f default
 
+    private bool _gameIsPaused;
+
     void Start()
     {
         // Debug.Log(SensitivityController.mouseSensitivity);
@@ -16,12 +18,16 @@ public class MoveWithAim : MonoBehaviour
             aimSpeed = SensitivityController.mouseSensitivity;
             rSpeed = SensitivityController.keysSensitivity;
         }
-        
+    }
+
+    void Awake()
+    {
+        _gameIsPaused = GameObject.Find("Level").GetComponent<PauseGame>().gameIsPaused;
     }
 
     void Update()
     {
-        if (!PauseGame.gameIsPaused)
+        if (!_gameIsPaused)
         {
             //for mouse aiming
             float aiming = aimSpeed * Input.GetAxis("Mouse X");

@@ -6,14 +6,16 @@ using UnityEngine.SceneManagement;
 public class PauseMenu : MonoBehaviour
 {
     public GameObject pauseMenu;
+    private bool _gameIsPaused;
 
     private void Awake()
     {
         pauseMenu = GameObject.Find("Canvas");
+        _gameIsPaused = GameObject.Find("Level").GetComponent<PauseGame>().gameIsPaused;
     }
     public void ResumeGame()
     {
-        PauseGame.gameIsPaused = !PauseGame.gameIsPaused;
+        _gameIsPaused = !_gameIsPaused;
         Time.timeScale = 1;
         pauseMenu.SetActive(false);
         AudioListener.pause = false;

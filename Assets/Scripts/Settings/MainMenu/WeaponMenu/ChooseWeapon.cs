@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,24 +6,28 @@ using UnityEditor;
 
 public class ChooseWeapon : MonoBehaviour
 {
+    public int bulletSize;
+    public int shootSpeed;
+
     public void Pistol()
     {
-        WeaponController.pistol = true;
-        WeaponController.shotgun = false;
-        WeaponController.rifle = false;
+        bulletSize = 1;
+        shootSpeed = 7;
+        Debug.Log("Pistol selected");
     }
 
     public void Shotgun()
     {
-        WeaponController.pistol = false;
-        WeaponController.shotgun = true;
-        WeaponController.rifle = false;
+        bulletSize = 3;
+        shootSpeed = 8;
+        Debug.Log("Shotgun selected");
     }
 
     public void Rifle()
     {
-        WeaponController.pistol = false;
-        WeaponController.shotgun = false;
-        WeaponController.rifle = true;
+        bulletSize = 1;
+        shootSpeed = 10;
+        Debug.Log("Rifle selected");
     }
+    
 }

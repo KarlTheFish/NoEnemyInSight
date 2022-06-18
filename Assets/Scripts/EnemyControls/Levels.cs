@@ -26,6 +26,5 @@ public class Levels : MonoBehaviour
                 SceneManager.LoadScene(6);
             }
         }
-        Debug.Log(lastScreen);
     }
 }

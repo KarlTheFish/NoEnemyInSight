@@ -6,6 +6,8 @@ public class MouseAim : MonoBehaviour
 {
     // Start is called before the first frame update
     float aimSpeed = 5f;
+
+    private bool _gameIsPaused;
     void Start()
     {
         if (SensitivityController.mouseSensitivity != 0)
@@ -14,10 +16,15 @@ public class MouseAim : MonoBehaviour
         }
     }
 
+    void Awake()
+    {
+        _gameIsPaused = GameObject.Find("Level").GetComponent<PauseGame>().gameIsPaused;
+    }
+
     // Update is called once per frame
     void Update()
     {
-        if (!PauseGame.gameIsPaused)
+        if (!_gameIsPaused)
         {
             float aiming = aimSpeed * Input.GetAxis("Mouse X");
 
