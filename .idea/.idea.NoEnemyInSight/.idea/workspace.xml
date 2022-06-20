@@ -5,19 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6857e604-4743-411a-843f-1f609879d08d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/EnemyComing.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/EnemyComing.mp3.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/GunShot.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/GunShot.mp3.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.NoEnemyInSight/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Assets-Shared.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-Locales.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-English (en).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Estonian (et).asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/AddressableAssetsData/AssetGroups/Localization-String-Tables-Estonian (et).asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/EnemyHit_var1.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/EnemyHit_var1.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/PistolShot_var4.mp3" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Audio/Project_Sounds/Gameplay/PistolShot_var4.mp3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/SaveData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/SaveData.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/gameplayLvl0.unity" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,18 +26,18 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Discover.Launch.Via.Unity": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "rider.run.widget.enabled.cache": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;rider.run.widget.enabled.cache&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../NoEnemyInSightTest.x86_64" />
@@ -114,7 +102,7 @@
       <workItem from="1655239722145" duration="2204000" />
       <workItem from="1655293203514" duration="1888000" />
       <workItem from="1655561831647" duration="7124000" />
-      <workItem from="1655708943735" duration="631000" />
+      <workItem from="1655708943735" duration="632000" />
     </task>
     <servers />
   </component>
