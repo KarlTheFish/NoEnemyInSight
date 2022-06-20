@@ -19,3 +19,4 @@ Lae alla siit repositooriumist fail "NEIS_Game.rar". Paki see arvutis lahti. Mä
 
 
 ## Litsents
+https://github.com/KarlTheFish/NoEnemyInSight/blob/5678b4607385592d16d61d3b0bd9544c5d850738/License
