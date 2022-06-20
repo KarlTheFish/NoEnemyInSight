@@ -3,6 +3,9 @@ No Enemy in Sight on visuaalita shooter mäng, mis on eelkõige mõeldud nägemi
 ![image](https://user-images.githubusercontent.com/90192557/174587823-efafc4b4-2ecc-48cc-926a-62d2956a01b0.png)
 
 
+## Projektist
+Projekt sai tehtud Tallinna Ülikoolis Digitehnoloogiate Instituudis seoses Tarkvaraarenduse projektiga. Tarkvaraarenduse projektis pidid üliõpilased looma endale grupid ning valima endale projekti teema, millega nad semestri vältel tegelevad. Suvel toimub praktika, kus grupid peavad oma projekti ellu viima.
+
 
 ## Kasutatud tehnoloogiad
 Mängu tegemiseks kasutasime Unity mängumootori versiooni 2021.3.4f1. Lisaks kasutasime Localization versiooni 1.3.2 Unitys. Mäng on kirjutatud C# keeles.
