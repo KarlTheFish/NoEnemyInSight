@@ -7,7 +7,7 @@ Mängu tegemiseks kasutasime Unity mängumootori versiooni 2021.3.4f1. Lisaks ka
 
 
 ## Projekti autorid
-Karl-Aleksander Vask, Kevin Rosenberg, Karl Piiber ja Gerog-Sten Toots.
+Karl-Aleksander Vask, Kevin Rosenberg, ja Karl Piiber.
 
 
 ## Mängu lisamine ja käivitamine Unity's
