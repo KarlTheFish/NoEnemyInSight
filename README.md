@@ -4,7 +4,7 @@ No Enemy in Sight on visuaalita shooter mäng, mis on eelkõige mõeldud nägemi
 
 
 ## Projektist
-Projekt sai tehtud Tallinna Ülikoolis Digitehnoloogiate Instituudis seoses Tarkvaraarenduse projektiga. Tarkvaraarenduse projektis pidid üliõpilased looma endale grupid ning valima endale projekti teema, millega nad semestri vältel tegelevad. Suvel toimub praktika, kus grupid peavad oma projekti ellu viima.
+Projekt sai tehtud Tallinna Ülikoolis Digitehnoloogiate Instituudis seoses Tarkvaraarenduse projektiga. Tarkvaraarenduse projektis pidid üliõpilased looma endale grupid ning valima endale projekti teema, millega nad semestri vältel tegelevad. Suvel toimus praktika, kus grupid peavad oma projekti ellu viima.
 
 
 ## Kasutatud tehnoloogiad
