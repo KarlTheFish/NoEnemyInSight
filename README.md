@@ -3,7 +3,7 @@ No Enemy in Sight on visuaalita shooter mäng, mis on eelkõige mõeldud nägemi
 
 
 ## Kasutatud tehnoloogiad
-Mängu tegemiseks kasutasime Unity mängumootori versiooni 2021.3.4f1. Lisaks kasutasime Localization versiooni 1.3.2 Unity's.
+Mängu tegemiseks kasutasime Unity mängumootori versiooni 2021.3.4f1. Lisaks kasutasime Localization versiooni 1.3.2 Unitys.
 
 
 ## Projekti autorid
@@ -11,4 +11,4 @@ Karl-Aleksander Vask, Kevin Rosenberg, Karl Piiber ja Gerog-Sten Toots.
 
 
 ## Mängu lisamine ja käivitamine Unity's
-Esialgu tuleb allalaadida Unity Hub. Seejärel tuleb valida Unity Hubis Installs ja siis Install Editor, kus tuleb valida vastav Unity versioon ehk 2021.3.4f1. Tuleb valida uuesti Projects ja vajutada Open nupu peale.
+Esialgu tuleb mängu failid koos GitHub Desktopiga enda arvutisse kopeerida. Siis tuleb allalaadida Unity Hub. Seejärel tuleb valida Unity Hubis Installs ja siis Install Editor, kus tuleb valida vastav Unity versioon ehk 2021.3.4f1. Tuleb valida uuesti Projects ja vajutada Open nupu peale. Open nupu peale vajutades tuleb valida Mängu failide kaust. Kui need on tehtud, saab mängu Unitys lahti teha.
